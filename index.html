@@ -14,6 +14,8 @@
             border: 5px solid #b1567d;
             border-radius: 15px;
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         h1 {
@@ -25,17 +27,22 @@
         }
 
         .video-container {
-            width: 100%;
+            width: 68%;
             height: 0;
             position: relative;
             padding-bottom: 28.125%;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
         }
 
         .video-item {
             width: 100%;
             height: 100%;
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             left: 0;
             top: 0;
             overflow: hidden;
@@ -46,6 +53,7 @@
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
+            width: 100%;
         }
 
         .image-item {
@@ -60,14 +68,33 @@
         }
 
         a {
-            color: orange;
+            color: #FFD700; /* yellow */
             text-decoration: none;
+        }
+
+        
+        .info-section {
+            text-align: center;
+            padding: 10px;
+            border: 5px solid #b1567d;
+            border-radius: 15px;
+            width: calc(30% - 20px);
+            margin-right: 0;
+            color: #FFD700; /* yellow */
         }
     </style>
 </head>
 <body>
-    <h1>Sol Raven</h1>
-    <p>Whisky Gargler</p>
+    <div class="info-section">
+        <p style="font-size: 1.5em;">Birthday: September 28</p>
+        <p style="font-size: 1.5em;">Age: 25</p>
+        <p style="font-size: 1.5em;">Gender: Female</p>
+        <p style="font-size: 1.5em;">Height: 158 cm</p>
+        <p style="font-size: 1.5em;">Weight: 43 kg</p>
+        <p style="font-size: 1.5em;">Hair color: Dark pink</p>
+        <p style="font-size: 1.5em;">Eye color: Magenta-purple</p>
+        <p style="font-size: 1.5em;">Affiliation: SICK HACK</p>
+    </div>
 
     <div class="video-container">
         <div class="video-item">
@@ -79,23 +106,19 @@
 
     <div class="image-container">
         <div class="image-item">
-            <p><a href="https://www.youtube.com" target="_blank">kikuri hiroi test 1</a></p>
-            <img src="https://i.imgur.com/mOXnrP1.jpg" alt="kikuri hiroi test 1">
+            <p><a href="https://www.youtube.com" target="_blank">Kikuri Hiroi Test 1</a></p>
+            <a href="https://www.youtube.com" target="_blank"><img src="https://i.imgur.com/mOXnrP1.jpg" alt="Kikuri Hiroi Test 1"></a>
         </div>
 
         <div class="image-item">
-            <p><a href="https://www.pixiv.net" target="_blank">kikuri hiroi test 2</a></p>
-            <img src="https://i.imgur.com/s2sydmT.jpg" alt="kikuri hiroi test 2">
+            <p><a href="https://www.pixiv.net" target="_blank">Kikuri Hiroi Test 2</a></p>
+            <a href="https://www.pixiv.net" target="_blank"><img src="https://i.imgur.com/s2sydmT.jpg" alt="Kikuri Hiroi Test 2"></a>
         </div>
 
         <div class="image-item">
-            <p><a href="https://www.bing.com" target="_blank">kikuri hiroi test 3</a></p>
-            <img src="https://i.imgur.com/46tDgtd.jpg" alt="kikuri hiroi test 3">
+            <p><a href="https://www.bing.com" target="_blank">Kikuri Hiroi Test 3</a></p>
+            <a href="https://www.bing.com" target="_blank"><img src="https://i.imgur.com/46tDgtd.jpg" alt="Kikuri Hiroi Test 3"></a>
         </div>
     </div>
-</body>
-</html>
-
-
 </body>
 </html>
